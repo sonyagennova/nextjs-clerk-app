@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+body {
+    margin: auto;
+    max-width: 1330px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+
+.dark-theme {
+    margin: auto;
+    max-width: 1330px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    background-color: rgb(58, 58, 58);
+    transition: 0.3s;
+    color: beige;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+/* THEME TOGGLE BUTTON */
+.toggle-theme p {
+    margin-bottom: 4px;
+}
+
+.capsule {
+    border: 2px solid rgb(112, 112, 112);
+    width: 40px;
+    height: 20px;
+    background-color: #444444;
+    background: -moz-linear-gradient(180deg, rgb(112, 112, 112) 0%, rgb(150, 150, 150) 62%);
+background: -webkit-linear-gradient(180deg, rgb(92, 92, 92) 0%, rgb(150, 150, 150) 62%);
+background: linear-gradient(180deg, rgb(95, 95, 95) 0%, rgb(151, 151, 151) 62%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#423721",endColorstr="#968867",GradientType=1); 
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.ball {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: rgb(212, 212, 212);
+    margin: 2px;
+    transition: 0.3s;
+}
+
+.red-dot {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    transition: 0.3s;
+}
+
+.on {
+    border: 2px solid rgb(122, 122, 105);
+    transition: 0.3s;
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(70,70,70,1) 62%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(70,70,70,1) 62%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(70,70,70,1) 62%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#464646",GradientType=1); 
+    
+}
+
+.switched-on {
+
+    background-color: rgb(138, 130, 114);
+    transition: 0.3s;
+    transform: translate(20px, 0px);
+    /* border: 1px solid beige; */
+}
+
+.green-dot {
+    background-color: greenyellow;
+}
+
+
+
+
+
+
+
+/* THE WHOLE DASHBOARD */
+main {
+    margin: 20px 0;
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 8px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.10);
+
+}
+
+/* TEAMS, MENU, SEARCH, PROFILE */
+.db-header {
+    height: 60px;
+    border-bottom: 2px solid rgb(230, 230, 230);
+    padding: 4px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.db-header-left,
+.db-header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.teams {
+    width: 160px;
+    height: 30px;
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 8px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.10);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.search {
+    width: 260px;
+    height: 30px;
+    padding-left: 12px;
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 8px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.10);
+}
+
+.profile {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid rgb(230, 230, 230);
+    overflow: hidden;
+}
+
+.profile img {
+    width: 100%;
+    height: auto;
+}
+
+.db-main {
+    padding: 50px;
+}
+
+.db-main-top-1 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.db-main-top-1-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    width: 240px;
+    height: 36px;
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 8px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.10);
+}
+
+.date {
+    border-width: 0;
+    font-size: 18px;
+}
+.download {
+    width: 100px;
+    height: 36px;
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    color: white;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+    background-color: #f4f4f5;
+    width: 400px;
+    height: 34px;
+    padding: 4px;
+    justify-content: space-around;
+    border-radius: 8px;
+    margin: 0 0 20px 0;
+}
+
+.tabs-item {
+    border: 1px solid #f4f4f5;
+    border-radius: 8px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b1b1b7;
+    font-weight: 600;
+    padding: 0 8px;
+}
+
+.active {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+
+.db-main-cards-section {
+    margin: 0 0 30px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.db-main-card {
+    width: 25%;
+    height: 80px;
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 8px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.10);
+    padding: 24px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.db-main-card h4 {
+    margin: 0;
+}
+
+.card-figure {
+    margin: 8px 0 0 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.db-main-card p {
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+}
+
+.main-area {
+    display: flex;
+    gap: 20px;
+}
+
+.overview {
+    width: 55%;
+    height: 360px;
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 8px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.10);
+    padding: 24px;
+}
+
+.overview-scale {
+    color: #b1b1b7;
+    height: 19.5%;
+    text-align: right;
+    margin-top: 0;
+}
+
+.annual-graph-container {
+    display: flex;
+    height: 90%;
+}
+
+.annual-graph-0 {
+    width: 10%;
+    height: 90%;
+    margin-right: 8px;
+}
+
+.annual-graph {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 7.5%;
+    padding: 4px;
+    height: 100%;
+    /* border: 1px solid gainsboro; */
+}
+
+.full {
+    background-color: black;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.full-dark {
+    background-color: rgb(112, 112, 112);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.months {
+    text-align:center;
+    width: 100%;
+    height: 20px;
+    margin: 4px 0 0 0;
+}
+
+.recent-sales {
+    width: 45%;
+    height: 360px;
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 8px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.10);
+    padding: 24px;
+}
+
+h3 {
+    margin: 0 0 12px 0;
+}
+
+.client-sales {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.client-sales img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid rgb(230, 230, 230);
+    overflow: hidden;
+}
+
+.data {
+    display: flex;
+    gap: 12px;
+}
+
+.names {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.email {
+    font-size: 14px;
+    font-weight: 200;
+    color: grey;
+}
+
+@media screen and (max-width: 1024px) {
+    .db-main-card {
+        width: 40%;
+    }
+
+    .db-main-cards-section {
+        flex-wrap: wrap;
+    }
+
+    .main-area {
+        display: block;
+    }
+
+    .overview,
+    .recent-sales {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .search {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 763px) {
+    .db-main-card {
+        width: 90%;
+    }
+}
