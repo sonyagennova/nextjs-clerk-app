@@ -1,14 +1,8 @@
 "use client";
 
 import { SignIn, SignedIn, useAuth } from '@clerk/nextjs';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import '../dashboard/page.scss'
-import {
-    Menubar,
-    MenubarTrigger,
-} from "@/components/ui/menubar";
-import { MenubarMenu } from '@radix-ui/react-menubar';
 import { useEffect, useState } from 'react';
 
 export default function Dashboard() {
