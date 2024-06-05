@@ -25,26 +25,26 @@ export default function Home() {
                     </nav>
                 </div>
                 <SignedOut>
-                <div className="login">
-                    <form action="">
-                        <button className="submit" type="submit" onClick={handleLoginClick}>
-                            Login
-                        </button>
-                    </form>
-                </div>
-                </SignedOut>
-                <SignedIn>
-                <div className="login">
-                    <form action="">
-                        <button className="submit" type="submit" onClick={() => signOut()}>
-                            Logout
-                        </button>
-                        <button className="submit" type="submit" onClick={router.push("/dashboard")}>
-                            Dashboard
-                        </button>
-                    </form>
-                </div>
-                </SignedIn>
+        <div className="login">
+          <form action="">
+            <button className="submit" type="button" onClick={() => router.push("/dashboard")}>
+              Login
+            </button>
+          </form>
+        </div>
+      </SignedOut>
+      <SignedIn>
+        <div className="login">
+          <form action="">
+            <button className="submit" type="button" onClick={() => signOut()}>
+              Logout
+            </button>
+            <button className="submit" type="button" onClick={() => router.push("/dashboard")}>
+              Dashboard
+            </button>
+          </form>
+        </div>
+      </SignedIn>
                 <p>
                     Don't have an account yet?
                     <span className="reg">Register</span>
