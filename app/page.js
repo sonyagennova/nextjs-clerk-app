@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </SignedIn>
                 <p>
-                    Don't have an account yet?
+                    Don&apos;t have an account yet?
                     <span className="reg">Register</span>
                 </p>
             </>
